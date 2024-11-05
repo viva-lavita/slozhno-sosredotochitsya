@@ -12,3 +12,15 @@
   --title-color: #FFC2E6;
   --bg-image: url(../images/cover-image-light.png) no-repeat center / cover;
 }
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --accent-color-2: #353430;
+    --text-color: #353430;
+    --text-color-2: #000028;
+    --title-color: #FFC2E6;
+    --bg-image: url(../images/cover-image-light.png) no-repeat center / cover;
+  }
+}
