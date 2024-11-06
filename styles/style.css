@@ -61,6 +61,10 @@
   inset-block-start: var(--padding);
 }
 
+.theme_light .header-rec {
+  color: transparent;
+}
+
 .header-rec::after {
   content: '';
   position: absolute;
@@ -71,6 +75,11 @@
   background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
+}
+
+.theme_light .header-rec::after {
+  box-shadow: none;
+  background-color: transparent;
 }
 
 .header__theme-menu {
