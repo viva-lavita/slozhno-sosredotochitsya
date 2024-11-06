@@ -7,7 +7,6 @@
   --bg-image: url(../images/cover-image-dark.png) no-repeat center / cover;
   --fonts: 'IBM Plex mono', monospace;
   --font-size: 18px;
-  /* --decor-border-inset: 10px; */
   --padding: 10px;
   --block-size: 668px;
 }
