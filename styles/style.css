@@ -4,19 +4,13 @@
   font-size: var(--font-size);
   line-height: 23.4px;
   background-image: var(--bg-image);
+  background-color: var(--bg-color);
   background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
   .page {
     --padding: 20px;
-    --block-size: 1024px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .page {
-    --block-size: 768px;
   }
 }
 
@@ -24,7 +18,7 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  block-size: var(--block-size);
+  block-size: 100vh;
 }
 
 .decorated-zone {
@@ -61,10 +55,6 @@
   inset-block-start: var(--padding);
 }
 
-.theme_light .header-rec {
-  color: transparent;
-}
-
 .header-rec::after {
   content: '';
   position: absolute;
@@ -75,11 +65,6 @@
   background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
-}
-
-.theme_light .header-rec::after {
-  box-shadow: none;
-  background-color: transparent;
 }
 
 .header__theme-menu {
@@ -230,27 +215,23 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .row-section {
+  .section-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, minmax(min-content, max-content));
   }
 
-  .row-section .main__section-title {
+  .section-grid .main__section-title {
     inline-size: 30%;
   }
 }
 
 @media (min-width: 1024px) {
-  .main__section:first-of-type {
+  .section-gap {
     gap: 12px;
   }
 
-  .main__section:nth-child(3) {
-    gap: 12px;
-  }
-
-  .row-section .main__section-list {
+  .section-grid .main__section-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -275,8 +256,16 @@
   gap: 10px;
 }
 
+.main__section-list-title {
+  font-size: var(--font-size);
+}
+
 .main__section-item-title {
   font-size: var(--font-size);
+}
+
+.main__section-item-description {
+  color: var(--text-color);
 }
 
 .main__section-item-description-link {
@@ -376,5 +365,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  block-size: var(--block-size);
+  block-size: 100vh;
 }

@@ -4,7 +4,18 @@
   --text-color: #353430;
   --text-color-2: #000028;
   --title-color: #FFC2E6;
+  --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png) no-repeat center / cover;
+  --rec-shadow: none;
+  --rec-color: transparent;
+}
+
+.theme_light .header-rec::after {
+  display: none;
+}
+
+.theme_light .header-rec {
+  display: none;
 }
 
 
@@ -15,6 +26,18 @@
     --text-color: #353430;
     --text-color-2: #000028;
     --title-color: #FFC2E6;
+    --bg-color: #fff1f7;
     --bg-image: url(../images/cover-image-light.png) no-repeat center / cover;
+    --rec-shadow: none;
+    --rec-color: transparent;
+  }
+
+  .header-rec::after {
+    box-shadow: var(--rec-shadow);
+    background-color: var(--rec-color);
+  }
+
+  .header-rec {
+    color: var(--rec-color);
   }
 }

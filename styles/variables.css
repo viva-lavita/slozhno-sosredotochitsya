@@ -4,9 +4,9 @@
   --text-color: #F1B2CE;
   --text-color-2: #000028;
   --title-color: #DB00FF;
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png) no-repeat center / cover;
   --fonts: 'IBM Plex mono', monospace;
   --font-size: 18px;
   --padding: 10px;
-  --block-size: 668px;
 }
