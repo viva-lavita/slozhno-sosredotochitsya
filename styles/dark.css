@@ -8,6 +8,7 @@
   --bg-image: url(../images/cover-image-dark.png) no-repeat center / cover;
   --rec-shadow: 0px 0px 4px 2px var(--accent-color);
   --rec-color: var(--accent-color);
+  --button-hover-color: #FF007066;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +22,7 @@
     --bg-image: url(../images/cover-image-dark.png) no-repeat center / cover;
     --rec-shadow: 0px 0px 4px 2px var(--accent-color);
     --rec-color: var(--accent-color);
+    --button-hover-color: #FF007066;
   }
 
   .header-rec::after {

@@ -8,6 +8,7 @@
   --bg-image: url(../images/cover-image-light.png) no-repeat center / cover;
   --rec-shadow: none;
   --rec-color: transparent;
+  --button-hover-color: #32312D66;
 }
 
 .theme_light .header-rec::after {
@@ -30,6 +31,7 @@
     --bg-image: url(../images/cover-image-light.png) no-repeat center / cover;
     --rec-shadow: none;
     --rec-color: transparent;
+    --button-hover-color: #32312D66;
   }
 
   .header-rec::after {
